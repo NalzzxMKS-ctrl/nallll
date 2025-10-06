@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nal Store - Laptop Terpercaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tech-blue': '#3b82f6',
+                        'tech-dark': '#1e40af',
+                        'dark-gray': '#374151'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+
+        
+        /* Laptop Animations */
+        .laptop-float {
+            animation: laptopFloat 4s ease-in-out infinite;
+        }
+        @keyframes laptopFloat {
+            0%, 100% { transform: translateY(0px) rotateX(0deg); }
+            50% { transform: translateY(-15px) rotateX(5deg); }
+        }
+        
+        .laptop-typing {
+            animation: typing 2s steps(20) infinite;
+        }
+        @keyframes typing {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+        
+        /* Mouse Animation */
+        .mouse-move {
+            animation: mouseMove 8s ease-in-out infinite;
+        }
+        @keyframes mouseMove {
+            0%, 100% { transform: translate(0, 0); }
+            25% { transform: translate(20px, -10px); }
+            50% { transform: translate(-15px, 10px); }
+            75% { transform: translate(10px, -5px); }
+        }
+        
+        /* Gradient Backgrounds */
+        .tech-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 50%, #1d4ed8 100%);
+        }
+        
+        /* Dark Red Theme for Hero */
+        .hero-dark-theme {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a0000 50%, #000000 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Matrix Rain Effect */
+        .matrix-rain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .matrix-char {
+            position: absolute;
+            color: #ff0000;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            animation: matrixFall linear infinite;
+            text-shadow: 0 0 5px #ff0000;
+        }
+        
+        @keyframes matrixFall {
+            0% {
+                transform: translateY(-100vh);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+        
+        /* Coding Animation */
+        .code-typing {
+            animation: codeType 3s steps(40) infinite;
+        }
+        
+        @keyframes codeType {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+        
+        /* Floating Elements */
+        .floating-emoji {
+            position: absolute;
+            animation: floatEmoji 6s ease-in-out infinite;
+            z-index: 2;
+        }
+        
+        @keyframes floatEmoji {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        /* Slider Navigation Buttons */
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 0, 0, 0.9);
+            border: 2px solid #ff0000;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            z-index: 10;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        }
+        
+        .slider-btn:hover {
+            background: rgba(255, 0, 0, 1);
+            transform: translateY(-50%) scale(1.15);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+        }
+        
+        .slider-btn.prev {
+            left: 15px;
+        }
+        
+        .slider-btn.next {
+            right: 15px;
+        }
+        
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        
+        /* Slider Styles */
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slide {
+            min-width: 100%;
+            flex-shrink: 0;
+        }
+        .slider-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 0, 0, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid #ff0000;
+        }
+        .slider-dot.active {
+            background: #ff0000;
+            transform: scale(1.2);
+            box-shadow: 0 0 10px #ff0000;
+        }
+        
+
+    </style>
+</head>
+<body class="bg-gray-50 text-dark-gray smooth-scroll">
+    <!-- Navigation -->
+    <nav class="tech-gradient shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-white text-xl font-bold">💻 Nal Store</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <button onclick="showPage('home')" class="text-white hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors">Beranda</button>
+                        <button onclick="showPage('products')" class="text-white hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors">Produk</button>
+                        <button onclick="showPage('order')" class="text-white hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors">Pemesanan</button>
+                        <button onclick="showPage('contact')" class="text-white hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors">Kontak</button>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-blue-200">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-blue-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <button onclick="showPage('home')" class="text-white hover:text-blue-200 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Beranda</button>
+                <button onclick="showPage('products')" class="text-white hover:text-blue-200 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Produk</button>
+                <button onclick="showPage('order')" class="text-white hover:text-blue-200 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Pemesanan</button>
+                <button onclick="showPage('contact')" class="text-white hover:text-blue-200 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Kontak</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <!-- Hero Slider Section -->
+        <section class="hero-dark-theme min-h-[50vh] flex items-center pt-16 relative">
+            <!-- Matrix Rain Background -->
+            <div class="matrix-rain" id="matrixRainHero"></div>
+            
+            <!-- Floating Coding Elements -->
+            <div class="floating-emoji" style="top: 10%; left: 5%; animation-delay: 0s;">💻</div>
+            <div class="floating-emoji" style="top: 20%; right: 10%; animation-delay: 1s;">🖱️</div>
+            <div class="floating-emoji" style="top: 70%; left: 8%; animation-delay: 2s;">⌨️</div>
+            <div class="floating-emoji" style="top: 80%; right: 15%; animation-delay: 3s;">🖥️</div>
+            <div class="floating-emoji" style="top: 30%; left: 85%; animation-delay: 4s;">💾</div>
+            <div class="floating-emoji" style="top: 60%; right: 80%; animation-delay: 5s;">🔧</div>
+            
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-5">
+                <div class="slider-container">
+                    <!-- Slider Navigation Buttons -->
+                    <button class="slider-btn prev" onclick="prevSlide()">‹</button>
+                    <button class="slider-btn next" onclick="nextSlide()">›</button>
+                    
+                    <div class="slider-track" id="sliderTrack">
+                        <!-- Slide 1: ASUS ROG Gaming -->
+                        <div class="slide">
+                            <div class="text-center max-w-2xl mx-auto">
+                                <div class="fade-in relative z-10">
+                                    <div class="code-typing mb-1">
+                                        <span class="text-red-500 font-mono text-xs">// Gaming Beast Initialized</span>
+                                    </div>
+                                    <h1 class="text-xl lg:text-2xl font-bold text-white mb-2">
+                                        ASUS ROG <span class="text-red-500">Strix G15</span>
+                                    </h1>
+                                    <div class="laptop-float mb-3">
+                                        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=300&h=180&fit=crop" alt="ASUS ROG Gaming Laptop" class="w-full max-w-xs mx-auto rounded-lg shadow-2xl border border-red-500" onerror="this.src=''; this.alt='ASUS ROG Image Failed to Load'; this.style.display='none';">
+                                    </div>
+                                    <p class="text-sm text-gray-300 mb-3 leading-relaxed max-w-lg mx-auto">
+                                        Gaming Beast dengan AMD Ryzen 7, RTX 3060, 16GB RAM, 512GB SSD. Layar 144Hz untuk pengalaman gaming yang luar biasa.
+                                    </p>
+                                    <div class="text-xl font-bold text-red-500 mb-3">Rp 18.500.000</div>
+                                    <div class="flex flex-col sm:flex-row gap-2 justify-center">
+                                        <button onclick="selectProduct('ASUS ROG Strix G15', 18500000)" class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-lg text-xs font-semibold transition-all transform hover:scale-105 shadow-lg border border-red-500">
+                                            Execute Gaming.exe
+                                        </button>
+                                        <button onclick="showPage('products')" class="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-3 py-2 rounded-lg text-xs font-semibold transition-all">
+                                            View All Products
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: MacBook Air M2 -->
+                        <div class="slide">
+                            <div class="text-center max-w-3xl mx-auto">
+                                <div class="fade-in relative z-10">
+                                    <div class="code-typing mb-2">
+                                        <span class="text-red-500 font-mono text-xs">// Creative.Pro.Studio.init()</span>
+                                    </div>
+                                    <h1 class="text-2xl lg:text-3xl font-bold text-white mb-3">
+                                        MacBook <span class="text-red-500">Air M2</span>
+                                    </h1>
+                                    <div class="laptop-float mb-4">
+                                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=240&fit=crop" alt="MacBook Air M2" class="w-full max-w-md mx-auto rounded-lg shadow-2xl border border-red-500" onerror="this.src=''; this.alt='MacBook Air Image Failed to Load'; this.style.display='none';">
+                                    </div>
+                                    <p class="text-base text-gray-300 mb-4 leading-relaxed max-w-xl mx-auto">
+                                        Premium ultrabook dengan Apple M2 Chip, 8GB RAM, 256GB SSD. Battery life hingga 18 jam untuk produktivitas maksimal.
+                                    </p>
+                                    <div class="text-2xl font-bold text-red-500 mb-4">Rp 19.999.000</div>
+                                    <div class="flex flex-col sm:flex-row gap-2 justify-center">
+                                        <button onclick="selectProduct('MacBook Air M2', 19999000)" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 shadow-lg border border-red-500">
+                                            Run MacBook.app
+                                        </button>
+                                        <button onclick="showPage('products')" class="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">
+                                            Browse Catalog
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3: Lenovo ThinkPad X1 Carbon -->
+                        <div class="slide">
+                            <div class="text-center max-w-3xl mx-auto">
+                                <div class="fade-in relative z-10">
+                                    <div class="code-typing mb-2">
+                                        <span class="text-red-500 font-mono text-xs">// Business.Elite.Series.deploy()</span>
+                                    </div>
+                                    <h1 class="text-2xl lg:text-3xl font-bold text-white mb-3">
+                                        Lenovo ThinkPad <span class="text-red-500">X1 Carbon</span>
+                                    </h1>
+                                    <div class="laptop-float mb-4">
+                                        <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=240&fit=crop" alt="Lenovo ThinkPad X1 Carbon" class="w-full max-w-md mx-auto rounded-lg shadow-2xl border border-red-500" onerror="this.src=''; this.alt='ThinkPad Image Failed to Load'; this.style.display='none';">
+                                    </div>
+                                    <p class="text-base text-gray-300 mb-4 leading-relaxed max-w-xl mx-auto">
+                                        Business Elite dengan Intel i7-12th Gen, 16GB RAM, 1TB SSD. Standar militer dengan carbon fiber body yang tahan banting.
+                                    </p>
+                                    <div class="text-2xl font-bold text-red-500 mb-4">Rp 25.500.000</div>
+                                    <div class="flex flex-col sm:flex-row gap-2 justify-center">
+                                        <button onclick="selectProduct('Lenovo ThinkPad X1 Carbon', 25500000)" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 shadow-lg border border-red-500">
+                                            Launch ThinkPad.exe
+                                        </button>
+                                        <button onclick="showPage('products')" class="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">
+                                            Access Database
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4: HP Pavilion 15 -->
+                        <div class="slide">
+                            <div class="text-center max-w-3xl mx-auto">
+                                <div class="fade-in relative z-10">
+                                    <div class="code-typing mb-2">
+                                        <span class="text-red-500 font-mono text-xs">// Budget.Smart.Choice.load()</span>
+                                    </div>
+                                    <h1 class="text-2xl lg:text-3xl font-bold text-white mb-3">
+                                        HP <span class="text-red-500">Pavilion 15</span>
+                                    </h1>
+                                    <div class="laptop-float mb-4">
+                                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400&h=240&fit=crop" alt="HP Pavilion 15" class="w-full max-w-md mx-auto rounded-lg shadow-2xl border border-red-500" onerror="this.src=''; this.alt='HP Pavilion Image Failed to Load'; this.style.display='none';">
+                                    </div>
+                                    <p class="text-base text-gray-300 mb-4 leading-relaxed max-w-xl mx-auto">
+                                        Budget Smart Choice dengan Intel i5-11th Gen, 8GB RAM, 512GB SSD. Cocok untuk pelajar dan pekerja kantoran dengan performa solid.
+                                    </p>
+                                    <div class="text-2xl font-bold text-red-500 mb-4">Rp 12.500.000</div>
+                                    <div class="flex flex-col sm:flex-row gap-2 justify-center">
+                                        <button onclick="selectProduct('HP Pavilion 15', 12500000)" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 shadow-lg border border-red-500">
+                                            Install HP.Pavilion
+                                        </button>
+                                        <button onclick="showPage('products')" class="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">
+                                            Show All Items
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5: Dell XPS 13 -->
+                        <div class="slide">
+                            <div class="text-center max-w-3xl mx-auto">
+                                <div class="fade-in relative z-10">
+                                    <div class="code-typing mb-2">
+                                        <span class="text-red-500 font-mono text-xs">// Dell.XPS.Premium.start()</span>
+                                    </div>
+                                    <h1 class="text-2xl lg:text-3xl font-bold text-white mb-3">
+                                        Dell <span class="text-red-500">XPS 13</span>
+                                    </h1>
+                                    <div class="laptop-float mb-4">
+                                        <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400&h=240&fit=crop" alt="Dell XPS 13" class="w-full max-w-md mx-auto rounded-lg shadow-2xl border border-red-500" onerror="this.src=''; this.alt='Dell XPS Image Failed to Load'; this.style.display='none';">
+                                    </div>
+                                    <p class="text-base text-gray-300 mb-4 leading-relaxed max-w-xl mx-auto">
+                                        Premium Ultrabook dengan Intel i7-12th Gen, 16GB RAM, 512GB SSD. InfinityEdge display dan carbon fiber palm rest yang elegan.
+                                    </p>
+                                    <div class="text-2xl font-bold text-red-500 mb-4">Rp 22.000.000</div>
+                                    <div class="flex flex-col sm:flex-row gap-2 justify-center">
+                                        <button onclick="selectProduct('Dell XPS 13', 22000000)" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 shadow-lg border border-red-500">
+                                            Execute Dell.XPS
+                                        </button>
+                                        <button onclick="showPage('products')" class="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">
+                                            View Repository
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 6: Acer Predator Helios 300 -->
+                        <div class="slide">
+                            <div class="text-center max-w-3xl mx-auto">
+                                <div class="fade-in relative z-10">
+                                    <div class="code-typing mb-2">
+                                        <span class="text-red-500 font-mono text-xs">// Predator.Gaming.Beast.activate()</span>
+                                    </div>
+                                    <h1 class="text-2xl lg:text-3xl font-bold text-white mb-3">
+                                        Acer Predator <span class="text-red-500">Helios 300</span>
+                                    </h1>
+                                    <div class="laptop-float mb-4">
+                                        <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=400&h=240&fit=crop" alt="Acer Predator Helios 300" class="w-full max-w-md mx-auto rounded-lg shadow-2xl border border-red-500" onerror="this.src=''; this.alt='Acer Predator Image Failed to Load'; this.style.display='none';">
+                                    </div>
+                                    <p class="text-base text-gray-300 mb-4 leading-relaxed max-w-xl mx-auto">
+                                        Gaming Beast dengan Intel i7-12th Gen, RTX 3070, 16GB RAM, 1TB SSD. Layar 165Hz dan AeroBlade 3D Fans untuk gaming ekstrem.
+                                    </p>
+                                    <div class="text-2xl font-bold text-red-500 mb-4">Rp 24.500.000</div>
+                                    <div class="flex flex-col sm:flex-row gap-2 justify-center">
+                                        <button onclick="selectProduct('Acer Predator Helios 300', 24500000)" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 shadow-lg border border-red-500">
+                                            Launch Predator.exe
+                                        </button>
+                                        <button onclick="showPage('products')" class="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">
+                                            Access Gaming Hub
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slider Navigation -->
+                    <div class="slider-nav">
+                        <div class="slider-dot active" onclick="goToSlide(0)"></div>
+                        <div class="slider-dot" onclick="goToSlide(1)"></div>
+                        <div class="slider-dot" onclick="goToSlide(2)"></div>
+                        <div class="slider-dot" onclick="goToSlide(3)"></div>
+                        <div class="slider-dot" onclick="goToSlide(4)"></div>
+                        <div class="slider-dot" onclick="goToSlide(5)"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="bg-gray-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold text-dark-gray mb-4">Mengapa Pilih Nal Store?</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Kami berkomitmen memberikan pelayanan terbaik untuk kebutuhan laptop Anda
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center fade-in bg-white p-6 rounded-lg shadow-lg">
+                        <div class="bg-tech-blue rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 laptop-float">
+                            <span class="text-3xl text-white">🚚</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-gray mb-4">Pengiriman Gratis</h3>
+                        <p class="text-gray-600">Pengiriman gratis ke seluruh Indonesia dengan packaging anti-shock</p>
+                    </div>
+                    <div class="text-center fade-in bg-white p-6 rounded-lg shadow-lg">
+                        <div class="bg-tech-blue rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 laptop-float">
+                            <span class="text-3xl text-white">🛡️</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-gray mb-4">Garansi Resmi</h3>
+                        <p class="text-gray-600">Semua produk bergaransi resmi dari distributor authorized</p>
+                    </div>
+                    <div class="text-center fade-in bg-white p-6 rounded-lg shadow-lg">
+                        <div class="bg-tech-blue rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 laptop-float">
+                            <span class="text-3xl text-white">💰</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-gray mb-4">Harga Terbaik</h3>
+                        <p class="text-gray-600">Harga terbaik dengan cicilan 0% dan cashback menarik</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Products Page -->
+    <div id="products" class="page pt-16">
+        <section class="bg-gray-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold text-dark-gray mb-4">Koleksi Laptop Terbaik</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Pilih laptop yang sesuai dengan kebutuhan dan budget Anda
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- ASUS ROG Strix -->
+                    <div class="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 fade-in">
+                        <div class="laptop-float">
+                            <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400&h=250&fit=crop" alt="ASUS ROG Strix Gaming Laptop" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src=''; this.alt='ASUS ROG Image Failed to Load'; this.style.display='none';">
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-gray mb-2">ASUS ROG Strix G15</h3>
+                        <p class="text-gray-600 mb-4">AMD Ryzen 7, RTX 3060, 16GB RAM, 512GB SSD</p>
+                        <div class="text-2xl font-bold text-tech-blue mb-4">Rp 18.500.000</div>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>✓ Gaming Performance Tinggi</li>
+                            <li>✓ Layar 144Hz</li>
+                            <li>✓ Cooling System Canggih</li>
+                            <li>✓ RGB Keyboard</li>
+                        </ul>
+                        <button onclick="selectProduct('ASUS ROG Strix G15', 18500000)" class="w-full bg-tech-blue hover:bg-tech-dark text-white py-3 rounded-lg font-semibold transition-colors">
+                            Pilih Laptop
+                        </button>
+                    </div>
+
+                    <!-- MacBook Air M2 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 fade-in">
+                        <div class="laptop-float">
+                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=250&fit=crop" alt="MacBook Air M2" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src=''; this.alt='MacBook Air Image Failed to Load'; this.style.display='none';">
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-gray mb-2">MacBook Air M2</h3>
+                        <p class="text-gray-600 mb-4">Apple M2 Chip, 8GB RAM, 256GB SSD</p>
+                        <div class="text-2xl font-bold text-tech-blue mb-4">Rp 19.999.000</div>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>✓ Ultra Tipis & Ringan</li>
+                            <li>✓ Battery Life 18 Jam</li>
+                            <li>✓ Retina Display</li>
+                            <li>✓ macOS Ventura</li>
+                        </ul>
+                        <button onclick="selectProduct('MacBook Air M2', 19999000)" class="w-full bg-tech-blue hover:bg-tech-dark text-white py-3 rounded-lg font-semibold transition-colors">
+                            Pilih Laptop
+                        </button>
+                    </div>
+
+                    <!-- Lenovo ThinkPad -->
+                    <div class="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 fade-in">
+                        <div class="laptop-float">
+                            <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=250&fit=crop" alt="Lenovo ThinkPad X1 Carbon" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src=''; this.alt='ThinkPad Image Failed to Load'; this.style.display='none';">
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-gray mb-2">Lenovo ThinkPad X1 Carbon</h3>
+                        <p class="text-gray-600 mb-4">Intel i7-12th Gen, 16GB RAM, 1TB SSD</p>
+                        <div class="text-2xl font-bold text-tech-blue mb-4">Rp 25.500.000</div>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>✓ Business Grade</li>
+                            <li>✓ Carbon Fiber Body</li>
+                            <li>✓ Military Standard</li>
+                            <li>✓ TrackPoint & Touchpad</li>
+                        </ul>
+                        <button onclick="selectProduct('Lenovo ThinkPad X1 Carbon', 25500000)" class="w-full bg-tech-blue hover:bg-tech-dark text-white py-3 rounded-lg font-semibold transition-colors">
+                            Pilih Laptop
+                        </button>
+                    </div>
+
+                    <!-- HP Pavilion -->
+                    <div class="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 fade-in">
+                        <div class="laptop-float">
+                            <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400&h=250&fit=crop" alt="HP Pavilion 15" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src=''; this.alt='HP Pavilion Image Failed to Load'; this.style.display='none';">
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-gray mb-2">HP Pavilion 15</h3>
+                        <p class="text-gray-600 mb-4">Intel i5-11th Gen, 8GB RAM, 512GB SSD</p>
+                        <div class="text-2xl font-bold text-tech-blue mb-4">Rp 12.500.000</div>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>✓ Everyday Computing</li>
+                            <li>✓ Full HD Display</li>
+                            <li>✓ Fast Charging</li>
+                            <li>✓ Bang & Olufsen Audio</li>
+                        </ul>
+                        <button onclick="selectProduct('HP Pavilion 15', 12500000)" class="w-full bg-tech-blue hover:bg-tech-dark text-white py-3 rounded-lg font-semibold transition-colors">
+                            Pilih Laptop
+                        </button>
+                    </div>
+
+                    <!-- Dell XPS 13 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 fade-in">
+                        <div class="laptop-float">
+                            <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400&h=250&fit=crop" alt="Dell XPS 13" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src=''; this.alt='Dell XPS Image Failed to Load'; this.style.display='none';">
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-gray mb-2">Dell XPS 13</h3>
+                        <p class="text-gray-600 mb-4">Intel i7-12th Gen, 16GB RAM, 512GB SSD</p>
+                        <div class="text-2xl font-bold text-tech-blue mb-4">Rp 22.000.000</div>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>✓ Premium Ultrabook</li>
+                            <li>✓ InfinityEdge Display</li>
+                            <li>✓ Carbon Fiber Palm Rest</li>
+                            <li>✓ Thunderbolt 4</li>
+                        </ul>
+                        <button onclick="selectProduct('Dell XPS 13', 22000000)" class="w-full bg-tech-blue hover:bg-tech-dark text-white py-3 rounded-lg font-semibold transition-colors">
+                            Pilih Laptop
+                        </button>
+                    </div>
+
+                    <!-- Acer Predator Helios -->
+                    <div class="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 fade-in">
+                        <div class="laptop-float">
+                            <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=400&h=250&fit=crop" alt="Acer Predator Helios 300" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src=''; this.alt='Acer Predator Image Failed to Load'; this.style.display='none';">
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-gray mb-2">Acer Predator Helios 300</h3>
+                        <p class="text-gray-600 mb-4">Intel i7-12th Gen, RTX 3070, 16GB RAM, 1TB SSD</p>
+                        <div class="text-2xl font-bold text-tech-blue mb-4">Rp 24.500.000</div>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>✓ High-End Gaming</li>
+                            <li>✓ 165Hz Display</li>
+                            <li>✓ AeroBlade 3D Fans</li>
+                            <li>✓ PredatorSense Control</li>
+                        </ul>
+                        <button onclick="selectProduct('Acer Predator Helios 300', 24500000)" class="w-full bg-tech-blue hover:bg-tech-dark text-white py-3 rounded-lg font-semibold transition-colors">
+                            Pilih Laptop
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Order Page -->
+    <div id="order" class="page pt-16">
+        <section class="coding-bg py-20 relative">
+            <div class="matrix-rain" id="matrixRainOrder"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 fade-in relative z-10">
+                    <h2 class="text-4xl font-bold text-code-green mb-4 terminal-text">System.Order.Process()</h2>
+                    <p class="text-xl text-gray-300 terminal-text">
+                        // Isi form di bawah ini untuk memesan laptop pilihan developer
+                    </p>
+                </div>
+
+                <div class="bg-code-gray rounded-2xl p-8 shadow-xl fade-in border border-code-green relative z-10">
+                    <form id="orderForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-code-green font-semibold mb-2 terminal-text">Nama Lengkap *</label>
+                                <input type="text" id="customerName" required class="w-full px-4 py-3 rounded-lg border border-code-green focus:outline-none focus:ring-2 focus:ring-matrix-green bg-code-dark text-code-green terminal-text">
+                            </div>
+                            <div>
+                                <label class="block text-code-green font-semibold mb-2 terminal-text">Nomor Telepon *</label>
+                                <input type="tel" id="customerPhone" required class="w-full px-4 py-3 rounded-lg border border-code-green focus:outline-none focus:ring-2 focus:ring-matrix-green bg-code-dark text-code-green terminal-text">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-code-green font-semibold mb-2 terminal-text">Email</label>
+                            <input type="email" id="customerEmail" class="w-full px-4 py-3 rounded-lg border border-code-green focus:outline-none focus:ring-2 focus:ring-matrix-green bg-code-dark text-code-green terminal-text">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-code-green font-semibold mb-2 terminal-text">Pilih Laptop *</label>
+                                <select id="selectedLaptop" required class="w-full px-4 py-3 rounded-lg border border-code-green focus:outline-none focus:ring-2 focus:ring-matrix-green bg-code-dark text-code-green terminal-text">
+                                    <option value="">Pilih Laptop</option>
+                                    <option value="ASUS ROG Strix G15">ASUS ROG Strix G15 - Rp 18.500.000</option>
+                                    <option value="MacBook Air M2">MacBook Air M2 - Rp 19.999.000</option>
+                                    <option value="Lenovo ThinkPad X1 Carbon">Lenovo ThinkPad X1 Carbon - Rp 25.500.000</option>
+                                    <option value="HP Pavilion 15">HP Pavilion 15 - Rp 12.500.000</option>
+                                    <option value="Dell XPS 13">Dell XPS 13 - Rp 22.000.000</option>
+                                    <option value="Acer Predator Helios 300">Acer Predator Helios 300 - Rp 24.500.000</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-code-green font-semibold mb-2 terminal-text">Jumlah *</label>
+                                <input type="number" id="quantity" min="1" value="1" required class="w-full px-4 py-3 rounded-lg border border-code-green focus:outline-none focus:ring-2 focus:ring-matrix-green bg-code-dark text-code-green terminal-text">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-code-green font-semibold mb-2 terminal-text">Metode Pembayaran *</label>
+                            <select id="paymentMethod" required class="w-full px-4 py-3 rounded-lg border border-code-green focus:outline-none focus:ring-2 focus:ring-matrix-green bg-code-dark text-code-green terminal-text">
+                                <option value="">Pilih Metode Pembayaran</option>
+                                <option value="Cash">Cash/Tunai</option>
+                                <option value="Transfer Bank">Transfer Bank</option>
+                                <option value="Cicilan 0%">Cicilan 0% (12 Bulan)</option>
+                                <option value="Cicilan 0%">Cicilan 0% (24 Bulan)</option>
+                                <option value="Credit Card">Credit Card</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-code-green font-semibold mb-2 terminal-text">Alamat Pengiriman *</label>
+                            <textarea id="shippingAddress" rows="3" required class="w-full px-4 py-3 rounded-lg border border-code-green focus:outline-none focus:ring-2 focus:ring-matrix-green bg-code-dark text-code-green terminal-text" placeholder="Masukkan alamat lengkap untuk pengiriman"></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-code-green font-semibold mb-2 terminal-text">Catatan Tambahan</label>
+                            <textarea id="orderNotes" rows="4" class="w-full px-4 py-3 rounded-lg border border-code-green focus:outline-none focus:ring-2 focus:ring-matrix-green bg-code-dark text-code-green terminal-text" placeholder="Permintaan khusus, warna laptop, atau catatan lainnya"></textarea>
+                        </div>
+
+                        <div class="bg-code-dark rounded-lg p-6 border border-code-green">
+                            <h3 class="text-xl font-bold text-code-green mb-4 terminal-text">Ringkasan Pesanan</h3>
+                            <div id="orderSummary" class="space-y-2 text-white terminal-text">
+                                <div class="flex justify-between">
+                                    <span>Laptop:</span>
+                                    <span id="summaryLaptop" class="text-red-400">-</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Harga Satuan:</span>
+                                    <span id="unitPrice" class="text-red-400">Rp 0</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Jumlah:</span>
+                                    <span id="summaryQuantity" class="text-red-400">1</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Subtotal:</span>
+                                    <span id="subtotal" class="text-red-400">Rp 0</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Ongkos Kirim:</span>
+                                    <span id="shippingFee" class="text-green-400">GRATIS</span>
+                                </div>
+                                <hr class="border-red-500">
+                                <div class="flex justify-between font-bold text-red-400 text-lg">
+                                    <span>Total:</span>
+                                    <span id="totalPrice">Rp 0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full bg-code-green hover:bg-matrix-green text-code-dark py-4 rounded-lg text-lg font-semibold transition-colors transform hover:scale-105 terminal-text">
+                            Pesan Sekarang
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page pt-16">
+        <section class="bg-gray-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-4xl font-bold text-dark-gray mb-4">Hubungi Kami</h2>
+                    <p class="text-xl text-gray-600">
+                        Kami siap membantu Anda menemukan laptop yang tepat
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="fade-in">
+                        <div class="bg-white rounded-2xl p-8 shadow-xl">
+                            <h3 class="text-2xl font-bold text-dark-gray mb-6">Informasi Kontak</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-center">
+                                    <div class="bg-tech-blue rounded-full w-12 h-12 flex items-center justify-center mr-4 laptop-float">
+                                        <span class="text-white text-xl">📱</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark-gray">WhatsApp</h4>
+                                        <p class="text-gray-600">085757819440 (Ainal)</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <div class="bg-tech-blue rounded-full w-12 h-12 flex items-center justify-center mr-4 laptop-float">
+                                        <span class="text-white text-xl">📧</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark-gray">Email</h4>
+                                        <p class="text-gray-600">info@nalstore.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <div class="bg-tech-blue rounded-full w-12 h-12 flex items-center justify-center mr-4 laptop-float">
+                                        <span class="text-white text-xl">📍</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark-gray">Alamat Toko</h4>
+                                        <p class="text-gray-600">Jl. Tersembunyi No. 123<br>Makassar, Sulawesi Selatan</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <div class="bg-tech-blue rounded-full w-12 h-12 flex items-center justify-center mr-4 laptop-float">
+                                        <span class="text-white text-xl">🕒</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark-gray">Jam Operasional</h4>
+                                        <p class="text-gray-600">Senin - Sabtu: 09:00 - 21:00<br>Minggu: 10:00 - 18:00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-8">
+                                <h4 class="font-semibold text-dark-gray mb-4">Follow Us</h4>
+                                <div class="flex space-x-4">
+                                    <button class="bg-tech-blue hover:bg-tech-dark text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors laptop-float">
+                                        📘
+                                    </button>
+                                    <button class="bg-tech-blue hover:bg-tech-dark text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors laptop-float">
+                                        📷
+                                    </button>
+                                    <button class="bg-tech-blue hover:bg-tech-dark text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors laptop-float">
+                                        🐦
+                                    </button>
+                                    <button class="bg-tech-blue hover:bg-tech-dark text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors laptop-float">
+                                        💼
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <div class="bg-white rounded-2xl p-8 shadow-xl">
+                            <h3 class="text-2xl font-bold text-dark-gray mb-6">Kirim Pesan</h3>
+                            
+                            <form id="contactForm" class="space-y-6">
+                                <div>
+                                    <label class="block text-dark-gray font-semibold mb-2">Nama *</label>
+                                    <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-tech-blue bg-white">
+                                </div>
+
+                                <div>
+                                    <label class="block text-dark-gray font-semibold mb-2">Email *</label>
+                                    <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-tech-blue bg-white">
+                                </div>
+
+                                <div>
+                                    <label class="block text-dark-gray font-semibold mb-2">Subjek *</label>
+                                    <select required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-tech-blue bg-white">
+                                        <option value="">Pilih Subjek</option>
+                                        <option value="Pertanyaan Produk">Pertanyaan Produk</option>
+                                        <option value="Konsultasi Laptop">Konsultasi Laptop</option>
+                                        <option value="Keluhan">Keluhan</option>
+                                        <option value="Saran">Saran</option>
+                                        <option value="Lainnya">Lainnya</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-dark-gray font-semibold mb-2">Pesan *</label>
+                                    <textarea required rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-tech-blue bg-white" placeholder="Tulis pesan Anda di sini..."></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full bg-tech-blue hover:bg-tech-dark text-white py-3 rounded-lg font-semibold transition-colors">
+                                    Kirim Pesan
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="tech-gradient text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">💻 Nal Store</h3>
+                    <p class="text-blue-100">
+                        Toko laptop terpercaya dengan koleksi lengkap dan harga terbaik di Makassar.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kategori</h4>
+                    <ul class="space-y-2 text-blue-100">
+                        <li>Gaming Laptop</li>
+                        <li>Business Laptop</li>
+                        <li>Ultrabook</li>
+                        <li>Workstation</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Brand</h4>
+                    <ul class="space-y-2 text-blue-100">
+                        <li>ASUS</li>
+                        <li>Apple MacBook</li>
+                        <li>Lenovo</li>
+                        <li>HP & Dell</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-blue-100">
+                        <li>📱 085757819440 (Ainal)</li>
+                        <li>📧 info@nalstore.com</li>
+                        <li>📍 Jl. Tersembunyi No. 123, Makassar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-blue-400 mt-8 pt-8 text-center text-blue-100">
+                <p>&copy; 2024 Nal Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Page navigation
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Close mobile menu
+            document.getElementById('mobile-menu').classList.add('hidden');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+            
+            // Trigger fade-in animations
+            setTimeout(() => {
+                document.querySelectorAll('.fade-in').forEach(el => {
+                    observer.observe(el);
+                });
+            }, 100);
+        }
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Product selection
+        function selectProduct(productName, price) {
+            document.getElementById('selectedLaptop').value = productName;
+            updateOrderSummary();
+            showPage('order');
+        }
+
+        // Price calculation
+        const laptopPrices = {
+            'ASUS ROG Strix G15': 18500000,
+            'MacBook Air M2': 19999000,
+            'Lenovo ThinkPad X1 Carbon': 25500000,
+            'HP Pavilion 15': 12500000,
+            'Dell XPS 13': 22000000,
+            'Acer Predator Helios 300': 24500000
+        };
+
+        function updateOrderSummary() {
+            const selectedLaptop = document.getElementById('selectedLaptop').value;
+            const quantity = parseInt(document.getElementById('quantity').value) || 1;
+            
+            const unitPrice = laptopPrices[selectedLaptop] || 0;
+            const subtotal = unitPrice * quantity;
+            const total = subtotal; // Free shipping
+
+            document.getElementById('summaryLaptop').textContent = selectedLaptop || '-';
+            document.getElementById('unitPrice').textContent = formatCurrency(unitPrice);
+            document.getElementById('summaryQuantity').textContent = quantity;
+            document.getElementById('subtotal').textContent = formatCurrency(subtotal);
+            document.getElementById('totalPrice').textContent = formatCurrency(total);
+        }
+
+        function formatCurrency(amount) {
+            return 'Rp ' + amount.toLocaleString('id-ID');
+        }
+
+        // Event listeners for form updates
+        document.getElementById('selectedLaptop').addEventListener('change', updateOrderSummary);
+        document.getElementById('quantity').addEventListener('input', updateOrderSummary);
+
+        // ===== GOOGLE SHEETS INTEGRATION =====
+        // GANTI URL INI DENGAN GOOGLE APPS SCRIPT WEB APP URL ANDA
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwPp5dpQsRTTHuMRymNRSLQ4_O_49jb-ismp_Y1mu6fStZFgJQ3Z0Vkh8A6OhrQCfQuiQ/exec';
+        
+        // Function to send data to Google Sheets
+        async function sendToGoogleSheets(data, type) {
+            try {
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        type: type,
+                        data: data,
+                        timestamp: new Date().toLocaleString('id-ID')
+                    })
+                });
+                
+                return true;
+            } catch (error) {
+                console.error('Error sending to Google Sheets:', error);
+                return false;
+            }
+        }
+
+        // Form submissions
+        document.getElementById('orderForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const customerName = document.getElementById('customerName').value;
+            const customerPhone = document.getElementById('customerPhone').value;
+            const customerEmail = document.getElementById('customerEmail').value;
+            const selectedLaptop = document.getElementById('selectedLaptop').value;
+            const quantity = document.getElementById('quantity').value;
+            const paymentMethod = document.getElementById('paymentMethod').value;
+            const shippingAddress = document.getElementById('shippingAddress').value;
+            const orderNotes = document.getElementById('orderNotes').value;
+            
+            // Calculate total
+            const unitPrice = laptopPrices[selectedLaptop] || 0;
+            const total = unitPrice * parseInt(quantity);
+            
+            // Prepare order data
+            const orderData = {
+                nama: customerName,
+                telepon: customerPhone,
+                email: customerEmail,
+                laptop: selectedLaptop,
+                jumlah: quantity,
+                harga_satuan: unitPrice,
+                total_harga: total,
+                metode_pembayaran: paymentMethod,
+                alamat_pengiriman: shippingAddress,
+                catatan: orderNotes
+            };
+            
+            // Show loading
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Mengirim Pesanan...';
+            submitBtn.disabled = true;
+            
+            // Send to Google Sheets
+            const success = await sendToGoogleSheets(orderData, 'order');
+            
+            if (success) {
+                alert(`Terima kasih ${customerName}! Pesanan ${quantity}x ${selectedLaptop} telah diterima dan tersimpan. Tim kami akan menghubungi Anda segera untuk konfirmasi pembayaran dan pengiriman.`);
+                
+                // Reset form
+                this.reset();
+                updateOrderSummary();
+            } else {
+                alert(`Terima kasih ${customerName}! Pesanan ${quantity}x ${selectedLaptop} telah diterima. Tim kami akan menghubungi Anda segera. (Data juga tersimpan secara lokal)`);
+            }
+            
+            // Reset button
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const contactData = {
+                nama: formData.get('name') || this.querySelector('input[type="text"]').value,
+                email: formData.get('email') || this.querySelector('input[type="email"]').value,
+                subjek: formData.get('subject') || this.querySelector('select').value,
+                pesan: formData.get('message') || this.querySelector('textarea').value
+            };
+            
+            // Show loading
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Mengirim Pesan...';
+            submitBtn.disabled = true;
+            
+            // Send to Google Sheets
+            const success = await sendToGoogleSheets(contactData, 'contact');
+            
+            if (success) {
+                alert('Terima kasih! Pesan Anda telah terkirim dan tersimpan. Tim Nal Store akan membalas dalam 24 jam.');
+            } else {
+                alert('Terima kasih! Pesan Anda telah diterima. Tim Nal Store akan membalas dalam 24 jam.');
+            }
+            
+            // Reset form and button
+            this.reset();
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        });
+
+        // Slider functionality
+        let currentSlide = 0;
+        const totalSlides = 6;
+
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            const sliderTrack = document.getElementById('sliderTrack');
+            sliderTrack.style.transform = `translateX(-${slideIndex * 100}%)`;
+            
+            // Update dots
+            document.querySelectorAll('.slider-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === slideIndex);
+            });
+        }
+
+        // Navigation functions
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            goToSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            goToSlide(currentSlide);
+        }
+
+        // Auto-advance slides every 6 seconds
+        setInterval(nextSlide, 6000);
+
+        // Matrix rain effect for hero section
+        function createHeroMatrixRain() {
+            const matrixContainer = document.getElementById('matrixRainHero');
+            if (!matrixContainer) return;
+            
+            const characters = '01010110100101{}</>[]()function(){}console.log()if()else{}for()while()class{}const let var npm install git commit push pull merge branch';
+            const codeSymbols = characters.split('');
+            
+            function createMatrixChar() {
+                const char = document.createElement('div');
+                char.className = 'matrix-char';
+                char.textContent = codeSymbols[Math.floor(Math.random() * codeSymbols.length)];
+                char.style.left = Math.random() * 100 + '%';
+                char.style.animationDuration = (Math.random() * 4 + 3) + 's';
+                char.style.animationDelay = Math.random() * 2 + 's';
+                char.style.fontSize = (Math.random() * 8 + 10) + 'px';
+                
+                matrixContainer.appendChild(char);
+                
+                // Remove character after animation
+                setTimeout(() => {
+                    if (char.parentNode) {
+                        char.parentNode.removeChild(char);
+                    }
+                }, 7000);
+            }
+            
+            // Create matrix characters periodically
+            setInterval(createMatrixChar, 150);
+        }
+
+        // Matrix rain effect for order page
+        function createMatrixRain() {
+            const matrixContainer = document.getElementById('matrixRainOrder');
+            if (!matrixContainer) return;
+            
+            const characters = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+            
+            function createMatrixChar() {
+                const char = document.createElement('div');
+                char.className = 'matrix-char';
+                char.textContent = characters[Math.floor(Math.random() * characters.length)];
+                char.style.left = Math.random() * 100 + '%';
+                char.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                char.style.animationDelay = Math.random() * 2 + 's';
+                
+                matrixContainer.appendChild(char);
+                
+                // Remove character after animation
+                setTimeout(() => {
+                    if (char.parentNode) {
+                        char.parentNode.removeChild(char);
+                    }
+                }, 5000);
+            }
+            
+            // Create matrix characters periodically
+            setInterval(createMatrixChar, 200);
+        }
+
+        // Initialize matrix rain effects
+        createHeroMatrixRain();
+        createMatrixRain();
+
+        // Initialize
+        updateOrderSummary();
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98a465cad26daa09',t:'MTc1OTc0NTcyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
